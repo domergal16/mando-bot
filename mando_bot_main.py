@@ -29,7 +29,7 @@ async def on_ready():
 
 ######
 
-@bot.command(name='fandoa',help='accesses local fandoa file dictionary - NOT an existing google doc',brief=' basesd on mandoa.org dictionary bot',description='to search, use `!mandoa SEARCHTERM LANGUAGE` ; where language is either mandoa or english and term is what you are looking for\n\nUse `!mandoa SEARCHTERM LANGUAGE ROOT` (or -r) if you are searching for an exact word, instead of words containing the search term. Search works for all single quotation marks')
+@bot.command(name='fandoa',help='accesses local fandoa file dictionary - NOT an existing google doc',brief=' basesd on mandoa.org dictionary bot',description='to search, use `!fandoa SEARCHTERM LANGUAGE` ; where language is either mandoa or english and term is what you are looking for\n\nUse `!fandoa SEARCHTERM LANGUAGE ROOT` (or -r) if you are searching for an exact word, instead of words containing the search term. Search works for all single quotation marks')
 async def fandoa(ctx, *, arg):#search: str, language: str, root: bool):
     args = arg.split(' ')
     search,language=args[0],args[1].lower()
