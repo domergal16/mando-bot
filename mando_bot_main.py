@@ -229,7 +229,7 @@ async def fandoa(ctx, *, arg):
 ######## EDIT ###
     
 @bot.command(aliases=["fe"],pass_context=True,name='fandoa_edit',help='edit local fandoa sqlite3 database',brief='update local fandoa database',description='use `!fandoa_edit [FANDOA_WORD] [COLUMN] [new_phrase]`. If this changes in the future, any additional keys will be documented here.\n\n.Also, if you want to replace a specific phrase, please use `_` instead of da space.\n\nWARNING: This function is case sensitive\n\nExample: !fe jat roots jatne jatne;_jate')
-#@commands.has_role('admin')
+@commands.has_role('admin')
 async def fandoa_edit(ctx, *, arg):
     args = arg.split(' ')
     term,column=args[0],args[1]
@@ -310,7 +310,7 @@ async def fandoa_edit(ctx, *, arg):
 ######### ADD ##
     
 @bot.command(aliases=["fa"],pass_context=True,name='fandoa_add',help='add entry to fandoa sqlite3 database',brief='add to local fandoa dictionary',description='use `!fandoa_add [FANDOA_WORD] [Definition] [ROOT(S)] [Pronunciation]. Roots is needed - list the word(s) that are used to make your new word. If there are more than one root in your new word, please use an underscore instead of a space.If your word *has* no roots, please use a dash instead. Pronunciation is optional, but is the fourth string.\n\n.Also, if you want to add a specific phrase, please use `_` instead of a space.\n\nWARNING: This function is case sensitive\n\nExample: `!fa jat correct;_valid_from_Jango_the_Muse jatne JAT`')
-#@commands.has_role('admin')
+@commands.has_role('admin')
 async def fandoa_add(ctx, *, arg):#search: str, language: str, root: bool):
     args = arg.split(' ')
     term,definition=args[0],args[1]
@@ -388,7 +388,7 @@ async def fandoa_add(ctx, *, arg):#search: str, language: str, root: bool):
 ######### DELETE ##
     
 @bot.command(aliases=["fd"],pass_context=True,name='fandoa_delete',help='remove entry from local fandoa sqlite3 database',brief='remove from local fandoa dictionary',description='use `!fandoa_delete [FANDOA_WORD] or !fd [FANDOA_WORD] to remove the word [FANDOA_WORD] from the database')
-#@commands.has_role('admin')
+@commands.has_role('admin')
 async def fandoa_delete(ctx, *, arg):#search: str, language: str, root: bool):
     args = arg.split(' ')
     term=args[0]
