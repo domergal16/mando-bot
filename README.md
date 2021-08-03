@@ -27,7 +27,7 @@ Aliases:`fa`<br>
 edit local fandoa sqlite3 database entry<br>
 Usage:use `!fandoa_edit [FANDOA_WORD] [COLUMN] [new_phrase]`. If this changes in the future, any additional keys will be documented here. Also, if you want to replace a specific phrase, please use `_` instead of a space.<br>
 WARNING: This function is case sensitive<br>
-Example: `!fe jat roots jatne jatne;\_jate`<br>
+Example: `!fe jat roots jatne jatne;_jate`<br>
 Aliases:`fe`<br>
 
 **fandoa delete**<br>
