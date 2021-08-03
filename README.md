@@ -9,9 +9,11 @@ Type !help command for more info on a command.
 
 **fandoa**<br>
 accesses local fandoa sqlite3 file dictionary <br>
-to search, use `!fandoa [SEARCHTERM] [LANGUAGE]`; where language is either mandoa or english and term is what you are looking for. If no language is specified, mando'a will be searched first. If no results are found, then english will be searched.<br>
-Use `!fandoa [SEARCHTERM] [LANGUAGE [s]` (or s) if you are searching for an exact word, instead of words containing the search term. Search works for all single quotation marks. 
-Aliases:`f`;
+to search, use `!fandoa [SEARCHTERM] [LANGUAGE]`; where language is either mandoa or english and term is what you are looking for. If no language is specified, mando'a will be searched first.<br>
+Use `!fandoa [SEARCHTERM] [LANGUAGE] [s]` (or s) if you are searching for an exact word, instead of words containing the search term. Search works for all single quotation marks. <br>
+Use `!f [word] language p` to display the pronunciation<br>
+If you want to use any of the additional flags; language must be specified
+Aliases:`f`
 
 **fandoa add**<br>
 add entry to fandoa sqlite3 database<br>
