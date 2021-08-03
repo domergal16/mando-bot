@@ -20,7 +20,7 @@ add entry to fandoa sqlite3 database<br>
 Usage:use `!fandoa_add [FANDOA_WORD] [Definition] [ROOT(S)] [Pronunciation]`. Roots is needed - list the word(s) that are used to make your new word. If there are more than one root in your new word, please use an underscore instead of a space.If your word *has* no roots, please use a dash instead. Pronunciation is optional, but is the fourth string. Also, if you want to add a specific phrase, please use `_` instead of a space.<br>
 WARNING: This function is case sensitive<br>
 
-Example: `!fa jat correct;\_valid\_from\_Jango\_the\_Muse jatne JAT`<br>
+Example: `!fa jat correct;_valid_from_Jango_the_Muse jatne JAT`<br>
 Aliases:`fa`<br>
 
 **fandoa edit**<br>
